@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="DeepSyle.css">
+</head>
+<body>
+    <div id="WorkSpace">
+        <div id="CanvasContainer">
+            <canvas id="DeepCanvas" ></canvas>
+        </div>
+    </div>
+    <label for="strokeWidth">Shape Stroke Width:</label>
+<select id="strokeWidth">
+    <option value="1">1</option>
+    <option value="3">3</option>
+    <option value="5">5</option>
+    <option value="8">8</option>
+</select>
+<input type="number" id="customStrokeWidth" placeholder="Custom Width">
+<button id="applyStrokeWidth">Apply</button>
+    <label for="colorChangeOption">Color Change Option:</label>
+    <select id="colorChangeOption">
+        <option value="borders">Borders</option>
+        <option value="corners">Corners</option>
+        <option value="movement">Movement</option>
+        <option value="gradientMovement">Gradient Movement</option>
+    </select>
+    <label for="changeSpeedOption">Change Speed:</label>
+    <select id="changeSpeedOption">
+        <option value="constantSpeed">Constant Speed</option>
+        <option value="increaseOnMove">Increase on Move</option>
+        <option value="increaseOnBorder">Increase on Border</option>
+    </select>
+    <button id="startButton">Start Animation</button>
+    <button id="increaseSpeedButton">Increase Speed</button>
+    <button id="decreaseSpeedButton">Decrease Speed</button>
+    <label for="shapeSelect">Select Shape:</label>
+    <select id="shapeSelect">
+        <option value="circle">Circle</option>
+        <option value="square">Square</option>
+    </select>
+    <audio id="collisionSound" src="ballHit.wav"></audio>
+    <script src="DeepJs.js"></script>
+</body>
+</html>
